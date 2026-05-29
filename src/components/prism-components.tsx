@@ -101,12 +101,14 @@ export function ButtonGroup({ children }: { children: ReactNode }) {
 }
 
 export function MapSnippet({ address }: { address: string }) {
+  const mapImageUrl = `${import.meta.env.BASE_URL}assets/map-snippet.png`;
+
   return (
     <div className="map-snippet-wrap">
       <div className="map-snippet">
         <img
           className="map-snippet__image"
-          src="/assets/map-snippet.png"
+          src={mapImageUrl}
           alt="Map showing your verified address location"
         />
       </div>
