@@ -1,0 +1,138 @@
+/**
+ * Design tokens extracted from Figma file 53mKDntRt5qwVMUxnBgvqS
+ * (Onboarding — Wolt — Dx — Roo audit). Matches Prism variable names used in exports.
+ */
+:root {
+  --usage-color-background-default: #ffffff;
+  --usage-color-text-default: #191919;
+  --usage-color-text-subdued-default: #606060;
+  --usage-color-border-default: #d6d6d6;
+  --usage-color-overlay: rgba(25, 25, 25, 0.5);
+
+  --comp-color-button-primary-background-default: #43ddc8;
+  --comp-color-button-primary-text-default: #003935;
+  --comp-color-button-tertiary-background-default: #f1f1f1;
+  --comp-color-button-tertiary-border-default: #f1f1f1;
+  --comp-color-button-tertiary-text-default: #191919;
+
+  --comp-color-field-background-default: #f6f9f9;
+  --comp-color-field-border-default: #f6f9f9;
+
+  --usage-type-display-large-font-family: "IBM Plex Sans", system-ui, sans-serif;
+  --usage-type-display-large-font-size: 24px;
+  --usage-type-display-large-line-height: 28px;
+
+  --usage-type-body-medium-font-family: "IBM Plex Sans", system-ui, sans-serif;
+  --usage-type-body-medium-font-size: 16px;
+  --usage-type-body-medium-line-height: 22px;
+
+  --usage-type-label-medium-font-family: "IBM Plex Sans", system-ui, sans-serif;
+  --usage-type-label-medium-font-size: 16px;
+  --usage-type-label-medium-line-height: 22px;
+
+  --comp-type-button-label-large-font-size: 18px;
+  --comp-type-button-label-large-line-height: 24px;
+
+  --comp-border-radius-button: 9999px;
+  --comp-border-radius-field-large: 8px;
+  --usage-border-radius-xx-large: 24px;
+
+  --usage-space-medium: 16px;
+  --usage-space-small: 12px;
+  --usage-space-x-small: 8px;
+
+  --device-width: 393px;
+  --device-height: 852px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--usage-type-body-medium-font-family);
+  background: #e8ecec;
+  color: var(--usage-color-text-default);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  gap: 32px;
+  padding: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app-sidebar {
+  width: 280px;
+  background: var(--usage-color-background-default);
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid var(--usage-color-border-default);
+}
+
+.app-sidebar h2 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.app-sidebar p {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: var(--usage-color-text-subdued-default);
+  line-height: 1.4;
+}
+
+.app-sidebar button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--usage-color-text-default);
+}
+
+.app-sidebar button:hover {
+  background: var(--comp-color-field-background-default);
+}
+
+.app-sidebar button.is-active {
+  background: var(--comp-color-button-tertiary-background-default);
+  font-weight: 600;
+}
+
+.app-sidebar .phase-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--usage-color-text-subdued-default);
+  margin: 12px 0 6px;
+}
+
+.app-preview-label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
