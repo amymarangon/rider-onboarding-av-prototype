@@ -22,6 +22,14 @@ npm run dev
 
 Opens at http://localhost:5174 with a sidebar to jump between screens.
 
+## Live prototype
+
+**https://amymarangon.github.io/rider-onboarding-av-prototype/**
+
+Deployed automatically to GitHub Pages on every push to `main`.
+
+Repository: https://github.com/amymarangon/rider-onboarding-av-prototype
+
 ## Figma fidelity
 
 This project uses **CSS design tokens** copied from Figma / Prism exports (`#43ddc8` primary, `#f1f1f1` tertiary, IBM Plex Sans, 393px device width, list cells, pill buttons).
